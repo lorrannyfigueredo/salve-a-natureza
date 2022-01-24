@@ -224,6 +224,59 @@ header .fa-bars {
     font-size: 2rem;
 }
 
+.service {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+.service .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service .box-container .box {
+    flex: 1 1 25rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--color5);
+    border: .2rem solid var(--color1);
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.service .box-container .box i {
+    color: var(--color1);
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+.service .box-container .box h3 {
+    color: var(--color4);
+    font-size: 2rem;
+}
+
+.service .box-container .box p {
+    color: var(--color2);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.service .box-container .box a {
+    color: var(--color4);
+    font-size: 1.7rem;
+}
+
+.service .box-container .box a:hover {
+    color: var(--color1);
+}
+
+.service .box-container .box:hover {
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
+}
 
 @media (max-width:768px) {
     html {
@@ -278,5 +331,9 @@ header .fa-bars {
 
     .about .row .content {
         text-align: center;
+    }
+
+    .service .box-container {
+        width: auto;
     }
 }
