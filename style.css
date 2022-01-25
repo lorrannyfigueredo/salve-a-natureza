@@ -6,9 +6,6 @@
     --color3: #ccc;
     --color4: #333;
     --color5: #ffffff;
-    --i: 1;
-    --i: 2;
-    --i: 3;
 }
 
 * {
@@ -346,6 +343,81 @@ header .fa-bars {
     transform: translateY(0rem);
 }
 
+.donate {
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.donate .heading {
+    color: var(--color5);
+}
+
+.donate .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.donate .form-container form {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(.4rem);
+    box-shadow: 0 .3rem .5rem var(--color4);
+    text-align: center;
+    border-top: .1rem solid rgba(255, 255, 255, 0.1);
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.donate .form-container form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.donate .form-container form .inputBox input, select {
+    height: 4rem;
+    width: 49%;
+    background-color: var(--color5);
+    color: var(--color4);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    outline: none;
+    border: none;
+}
+
+.donate .form-container form textarea {
+    height: 20rem;
+    width: 100%;
+    background-color: var(--color5);
+    color: var(--color4);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.donate .form-container form input {
+    color: var(--color5);
+    border-color: var(--color5);
+}
+
+.donate .form-container form input:hover {
+    color: var(--color1);
+    border-color: var(--color1);
+    background-color: var(--color5);
+}
+
 @media (max-width:768px) {
     html {
         font-size: 55%;
@@ -396,12 +468,23 @@ header .fa-bars {
     .home .content p {
         width: auto;   
     }
-
+    
     .about .row .content {
         text-align: center;
     }
 
     .service .box-container {
         width: auto;
+    }
+}
+
+@media (max-width:500px) {
+    
+    .donate .form-container form .inputBox input, select {
+        width: 100%;
+    }
+
+    .donate .form-container form {
+        width: 90%;
     }
 }
