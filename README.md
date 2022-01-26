@@ -1,6 +1,6 @@
-<h1 align="center">Website: Plant :seedling:</h1>
+<h1 align="center">Site: Plant :seedling:</h1>
 
-<h2> Website responsivo usando html, css e javascript: </h2>
+<h2> Site responsivo usando html, css e javascript: </h2>
 <p> ✔ Barra de navegação com efeito de menu de alternância. </p>
 <p> ✔ Seção <strong>sobre</strong> usando flexbox. </p>
 <p> ✔ Seção de <strong>serviços</strong> com flexbox. </p>
@@ -12,6 +12,8 @@
 <h1 align="center">Gif do projeto :seedling:</h1>
 
 ![plant](https://user-images.githubusercontent.com/97335833/151198385-3d9baa26-11e6-4105-a767-72dae88a736b.gif)
+
+<h2> Página do projeto: https://lorrannyfigueredo.github.io/salve-a-natureza/ </h2>
 
 <h2> Ferramentas utilizadas: </h2>
 <li> Visual Studio Code - Editor de código </li>
