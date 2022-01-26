@@ -103,7 +103,6 @@ header {
 header .logo {
     color: var(--color1);
     font-size: 3rem;
-    /* calc(.8vw + 1em); */
 }
 
 header .navbar ul {
@@ -116,7 +115,6 @@ header .navbar ul {
 
 header .navbar ul a {
     font-size: 2rem;
-    /* calc(.5vw + 1em); */
     color: var(--color2);
 }
 
@@ -169,8 +167,8 @@ header .fa-bars {
 }
 
 .about .row .image {
-    flex: 1 1 40rem;
-    padding: 2rem;
+    flex: 1 1 35rem;
+    padding: 1rem;
 }
 
 .about .row .image img {
@@ -178,8 +176,8 @@ header .fa-bars {
 }
 
 .about .row .content {
-    flex: 1 1 40rem;
-    padding: 2rem;
+    flex: 1 1 45rem;
+    padding: 1rem;
 }
 
 .about .row .content h3 {
@@ -201,11 +199,11 @@ header .fa-bars {
 }
 
 .about .box-container .box {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
     border: .2rem solid var(--color1);
     flex: 1 1 20rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .about .box-container .box i {
@@ -470,6 +468,86 @@ header .fa-bars {
     color: var(--color2);
 }
 
+.footer {
+    background-color: var(--color4);
+}
+
+.footer .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footer .box-container .box {
+    margin: 2rem;
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box .logo {
+    font-size: 3rem;
+    color: var(--color1);
+}
+
+.footer .box-container .box p {
+    font-size: 1.7rem;
+    color: var(--color3);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color5);
+}
+
+.footer .box-container .box:nth-child(2) a {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #eee;
+    display: block;
+    padding: .5rem 0;
+}
+
+.footer .box-container .box:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+.footer .box-container .box .letter {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.footer .box-container .box form input {
+    padding: 0 1rem;
+    outline: none;
+    border: .2rem solid var(--color1);
+    background: none;
+    font-size: 1.7rem;
+    color: var(--color5);
+    height: 4rem;
+    width: 74%;
+}
+
+.footer .box-container .box form button {
+    outline:none;
+    border: none;
+    background-color: var(--color1);
+    font-size: 1.9rem;
+    color: var(--color5);
+    height: 4rem;
+    width: 25%;
+    cursor: pointer;
+}
+
+.footer .box-container .box form button:hover {
+    color: var(--green);
+    background: none;
+    border: .1rem solid var(--green);
+}
+
 @media (max-width:768px) {
     html {
         font-size: 55%;
@@ -520,7 +598,7 @@ header .fa-bars {
     .home .content p {
         width: auto;   
     }
-    
+
     .about .row .content {
         text-align: center;
     }
